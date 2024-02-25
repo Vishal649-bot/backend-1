@@ -8,7 +8,7 @@ app.use(bodyparser.urlencoded())
 
 app.use('/add-product', (req,res,next)=>{
     console.log('In the Middleware');
-    res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add product</button></input></form>')
+    res.send('<form action="/product" method="POST"><input type="text" name="title"><input type="text" name="title"><button type="submit">Add product</button></input></input></form>')
 })
 
 app.use('/product', (req,res,next)=>{
